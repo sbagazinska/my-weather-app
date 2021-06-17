@@ -8,7 +8,7 @@
   height: 500px;
   max-width: 550px;
   min-width: 550px;
-  padding: 5px 25px 5px 25px;
+  padding: 5px 15px 5px 25px;
   background-color: rgba(247, 241, 239, 0.5);
   backdrop-filter: blur(6px);
   backdrop-filter: opacity(35px);
@@ -23,16 +23,16 @@ form {
       .col-6 {padding: 40px 30px 110px 30px;}
      
   
-#city {font-size: 50px;}
+#city {font-size: 40px;}
 #today {font-size: 25px; 
-padding: 20px 2px 2px 10px;}
+padding: 10px 2px 2px 10px;}
 #time {font-size: 20px;}
 #description {font-size: 25px;
   padding: 20px 2px 2px 90px;}
-#temperature {font-size: 50px;}
-#celsius {font-size: 25px;}
-#break {font-size: 25px;}
-#fahrenheit {font-size: 25px;}
+#temperature {font-size: 35px;}
+#celsius {font-size: 20px;}
+#break {font-size: 20px;}
+#fahrenheit {font-size: 20px;}
 
 i { padding: 8px 8px;
 font-size: 22px;}
