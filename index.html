@@ -16,88 +16,48 @@
 <body>
     <img src="visuals/sky.jpeg" width="1100">
     <div class="container">
-        <div class="weather-app">
-            <form id="search-form"> <input type="text" placeholder="search a city" id="search-input" />
-                <input type="submit" value="Search" />
-                <input type="submit" value="Current" id="btn-current" />
-            </form>
-            <div class="row">
-                <div class="col-6">
-                    <strong id="city"></strong>
-                    <br>
-                    <span id="today"></span>
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
 
-                    <span id="time"></span>
-                    <br>
-                    <span id="description"></span>
+                <form id="search-form"> <input type="search" placeholder="Search a city" id="city-input"
+                        autocomplete="off" />
+                    <input type="submit" value="Search" />
+                    <input type="submit" value="Current" id="btn-current" />
+                </form>
+
+                <div class="overview">
+                    <h1 id="city"></h1>
+                    <ul>
+                        <li>Last updated: <span id="date"></span></li>
+                        <li id="description"></li>
+                    </ul>
                 </div>
-                <div class="col-6 right">
-                    <img src="http://openweathermap.org/img/wn/10d@2x.png" width="70px" id="icon" class="float-left">
-                    <span class="todays-temp">
-                        <span id="temperature"></span>
-                        <span id="celsius">°C</span>
-                        <span class="break">|</span>
-                        <span id="fahrenheit">°F</span>
-                        <br>
-                        <ul>
-                            <li class="humidity">Humidity:
-                                <span id="humidity"></span>
-                                %
-                            </li>
-                            <li class="wind">Wind:
-                                <span id="wind"></span>
-                                km/h
-                            </li>
-                            <li class="precipitation">Precipitation:
-                                <span id="precipitation"></span>
-                                %
-                            </li>
-                        </ul>
-                    </span>
-
-                </div>
-            </div>
-
-
-            <div class="weather-forecast">
                 <div class="row">
-                    <div class="col-2">
-                        <div class="weather-forecast-date">Mon</div>
-                        <img src="visuals/sunny:cloudsA.png" width="60px">
-                        <div class="temperature">9°C</div>
+                    <div class="col-6">
+                        <div class="weather-temperature">
+                            <img src="" alt="Clear" id="icon" class="float-left" />
+                            <div class="float-left">
+                                <strong id="temperature"></strong><span class="units"> <a href="#" id="celsius-link"> °C
+                                    </a>| <a href="#" id="fahrenheit-link">°F</a></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <div class="weather-forecast-date">Tue</div>
-                        <img src="visuals/sunny:cloudsA.png" width="60px">
-                        <div class="temperature">15°C</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="weather-forecast-date">Wed</div>
-                        <img src="visuals/stormA.png" width="60px">
-                        <div class="temperature">14°C</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="weather-forecast-date">Thu</div>
-                        <img src="visuals/rainA.png" width="60px">
-                        <div class="temperature">13°C</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="weather-forecast-date">Fri</div>
-                        <img src="visuals/rainA.png" width="60px">
-                        <div class="temperature">12°C</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="weather-forecast-date">Sat</div>
-                        <img src="visuals/sunny:cloudsA.png" width="60px">
-                        <div class="temperature">16°C</div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span> m/h</li>
+                        </ul>
                     </div>
                 </div>
+                <div class="weather-forecast" id="forecast"></div>
             </div>
+
         </div>
-    </div>
-    <small><a href="https://github.com/sbagazinska/my-weather-app" target="_blank">Open-source code</a>, by Sylwia
-        Bagazinska</small>
-    </div>
+        <small>
+            <a class=footer href="https://github.com/sbagazinska/my-weather-app" target="_blank">Open-source code</a>
+            by <a class=footer href="https://www.linkedin.com/in/sylwia-bagazinska-9371a826/" target="_blank">Sylwia
+                Bagazinska</a>
+        </small>
     </div>
     <script src='script.js'></script>
 </body>
