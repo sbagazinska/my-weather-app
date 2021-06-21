@@ -3,15 +3,16 @@ body {
 }
 
 form {
-  padding: 25px 0px;
+  margin: 5px 0px 25px ;
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
+  color: rgb(80, 64, 119);
+  font-size: 30px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  padding: 5px;
 }
 
 ul {
@@ -21,9 +22,9 @@ ul {
 
 li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  color: rgb(135, 135, 135);
+  margin: 0px;
+  padding: 5px;
+  color: rgb(126, 102, 142);
   font-size: 20px;
   font-weight: 100;
   line-height: 19px;
@@ -34,14 +35,14 @@ li:first-letter {
 }
 
 a{
-  color: black;
+  color: rgb(80, 64, 119);
   text-decoration: none;
 }
 a:hover{
-  color:blueviolet
+  color:rgb(57, 11, 221)
 }
 a.footer {
-  color:blueviolet
+  color:rgb(126, 102, 142)
 }
 .weather-app-wrapper {
   position: absolute;
@@ -70,22 +71,44 @@ a.footer {
   margin-bottom: 20px;
 }
 
+.search-button,
+.city-bar {
+  border: 1px solid rgb(126, 102, 142);
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: rgb(126, 102, 142);
+  background-color: transparent;
+}
+
+.city-bar {
+  width: 50%;
+}
+.search-button {
+  transition: all 200ms ease-in-out;
+  width: 20%;
+}
+
+.search-button:hover {
+  color: white;
+  background-color: rgb(126, 102, 142);
+}
+
 .weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  color: rgb(80, 64, 119);
+  font-size: 60px;
   line-height: 1;
   font-weight: 400;
+  margin-left: 20px;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   top: -34px;
 }
 
@@ -99,14 +122,14 @@ a.footer {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top:  30px;
   text-align: center;
-  color: #000;
+  color: rgb(52, 38, 88);
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperature-min {
@@ -114,9 +137,10 @@ a.footer {
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 15px;
 }
 
-.row{
-    padding: 15px 0px;
-}
+
+
+
+
